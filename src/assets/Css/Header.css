@@ -1,0 +1,17 @@
+
+
+.hero{
+box-sizing: border-box;
+display: inline-block;
+
+background-color: yellowgreen;
+width: 95%;
+height: 100px;
+padding: 20px;
+
+
+}
+
+.nav__item{
+    
+}
