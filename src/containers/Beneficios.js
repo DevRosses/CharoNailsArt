@@ -5,6 +5,7 @@ export default function Beneficios() {
   return (
     <>
       <div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1>Beneficios</h1>
       </div>
     </>

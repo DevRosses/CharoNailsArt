@@ -1,11 +1,12 @@
 import React from "react";
 import "../assets/Css/Reserva.css";
 
-export default function Reservas() {
+export default function Reserva() {
   return (
     <>
       <div>
-        <h1>Reservas</h1>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1>Reserva</h1>
       </div>
     </>
   );

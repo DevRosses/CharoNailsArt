@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    scroll-behavior: smooth;
+    --black: #0f0f0f;
+    --violet: #b131a0cb;
+    --background: #dc79f0f8;
+  }
+  
+  body {
+    background-color: var(--background);
+    font-family: "Archivo", sans-serif;
+  }

@@ -5,6 +5,7 @@ export default function Contacto() {
   return (
     <>
       <div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1>Contacto</h1>
       </div>
     </>

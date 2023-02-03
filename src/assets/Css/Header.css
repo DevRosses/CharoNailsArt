@@ -1,17 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    scroll-behavior: smooth;
+    --black: #0f0f0f;
+    --violet: #b131a0cb;
+    --background: #ecb5f7f8;
+  }
+  
+  body {
+    background-color: var(--background);
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 70px 0;
+  }
+  
+  .container--hero {
+    padding: 0 auto;
+  }
+  
+  .nav {
+    /* background-color: red; */
+    height: 80px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__logo{
+    overflow: hidden;
+    padding-top: 12%;
+    /* background-color: yellow; */
+  
+  }
+  
+  .nav__menu {
+
+    background-color: var(--violet);
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 5px;
+  }
+  
+  .nav__list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--violet);
+    padding: 80px 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 2.5rem;
+  
+    list-style: none;
+  
+    transform: translate(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .nav__list--show {
+    transform: translate(0);
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
 
 
-.hero{
-box-sizing: border-box;
-display: inline-block;
-
-background-color: yellowgreen;
-width: 95%;
-height: 100px;
-padding: 20px;
-
-
-}
-
-.nav__item{
+  @media(min-width:768px){
+ 
+  
+    .nav__menu {
+  
+      /* desaparece el menu hamburguesa */
+     display: none;
+    }
     
-}
+    .nav__list {
+      position: static;
+  
+      background-color: transparent;
+      padding: 0;
+  
+      display: flex;
+      gap: 2rem;
+    
+      list-style: none;
+    
+      transform: unset;
+      transition: none;
+    }
+    
+    .nav__list--show {
+      transform: unset;
+    }
+    
+    .nav__link {
+      color: var(--black);
+    }
+  }

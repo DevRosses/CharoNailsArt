@@ -12,6 +12,7 @@ import Layout from "../components/Layout";
 function App() {
   return (
     <BrowserRouter>
+    <Layout>
     <Routes>
       <Route exact path="/" element= {<Home />}></Route>
       <Route exact path="/Somos" element= {<Somos />}></Route>
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/Beneficios" element= {<Beneficios />}></Route>
       <Route exact path="/Contacto" element= {<Contacto />}></Route>
     </Routes>
+    </Layout>
     </BrowserRouter>
   )
 }
